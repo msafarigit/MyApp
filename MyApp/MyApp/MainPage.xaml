@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyApp"
+             x:Class="MyApp.MainPage">
+
+   <!--<Grid> 
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="1" Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        
+        <Label Text="Welcome to Xamarin.Forms Rocks!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </Grid>-->
+    
+    <!--<StackLayout>
+        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </StackLayout>-->
+
+</ContentPage>
