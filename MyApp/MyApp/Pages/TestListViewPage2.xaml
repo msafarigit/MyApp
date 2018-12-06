@@ -23,7 +23,7 @@
 
         <ListView.Footer>
             <StackLayout Padding="10" Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="#dadada">
-                <Label Text="Footer" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" TextColor="Black" FontAttributes="Bold"/>
+                <Label  Text="Footer" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" TextColor="Black" FontAttributes="Bold"/>
             </StackLayout>
         </ListView.Footer>
     </ListView>

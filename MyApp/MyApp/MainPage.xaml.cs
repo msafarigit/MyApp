@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace MyApp
 {
@@ -19,44 +14,44 @@ namespace MyApp
     //class MasterDetailPage : Page
     //class Page : VisualElement
     //class VisualElement : Element
-    public partial class MainPage : ContentPage
+    public partial class MainPage : TabbedPage//ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
         }
 
-        //This is Loaded Event!!
-        protected override void OnAppearing()
-        {
-            //class AbsoluteLayout : Layout<View>
-            //class Grid : Layout<View>
-            //class RelativeLayout : Layout<View>
-            //class ScrollView : Layout
-            //class StackLayout : Layout<View>
-            //abstract class Layout<T> : Layout
-            //abstract class Layout : View, ILayout
-            //class View : VisualElement
-            //class VisualElement : Element
-            StackLayout layout = new StackLayout();
+        //This is Loaded Event!! Add Control in runtime
+        //protected override void OnAppearing()
+        //{
+        //    //class AbsoluteLayout : Layout<View>
+        //    //class Grid : Layout<View>
+        //    //class RelativeLayout : Layout<View>
+        //    //class ScrollView : Layout
+        //    //class StackLayout : Layout<View>
+        //    //abstract class Layout<T> : Layout
+        //    //abstract class Layout : View, ILayout
+        //    //class View : VisualElement
+        //    //class VisualElement : Element
+        //    StackLayout layout = new StackLayout();
 
-            //class Label : View
-            Label firstNameLbl = new Label
-            {
-                Text = "Enter your First Name:",
-                VerticalOptions = LayoutOptions.Center,
-                HorizontalOptions = LayoutOptions.Center
-            };
-            layout.Children.Add(firstNameLbl);
+        //    //class Label : View
+        //    Label firstNameLbl = new Label
+        //    {
+        //        Text = "Enter your First Name:",
+        //        VerticalOptions = LayoutOptions.Center,
+        //        HorizontalOptions = LayoutOptions.Center
+        //    };
+        //    layout.Children.Add(firstNameLbl);
 
-            //class Entry : InputView
-            //class InputView : View
-            Entry firstNameEty = new Entry { Placeholder = "Enter your First Name:" };
-            layout.Children.Add(firstNameEty);
+        //    //class Entry : InputView
+        //    //class InputView : View
+        //    Entry firstNameEty = new Entry { Placeholder = "Enter your First Name:" };
+        //    layout.Children.Add(firstNameEty);
 
-            this.Content = layout;
+        //    this.Content = layout;
 
-            base.OnAppearing();
-        }
+        //    base.OnAppearing();
+        //}
     }
 }

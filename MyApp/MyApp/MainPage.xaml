@@ -1,9 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyApp"
+             xmlns:pages="clr-namespace:MyApp.Pages"
              x:Class="MyApp.MainPage">
 
+
+    <TabbedPage.Children>
+        <pages:RelativePage Title="Page 1"/>
+        <pages:AbsolutePage Title="Page 2"/>
+        <pages:ScrollPage Title="Page 3"/>
+        <pages:TestListViewPage2 Title="Page 4"/>
+    </TabbedPage.Children>
+    
+    
+    
+    
+    
+    
    <!--<Grid> 
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -19,4 +33,4 @@
         <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
     </StackLayout>-->
 
-</ContentPage>
+</TabbedPage>

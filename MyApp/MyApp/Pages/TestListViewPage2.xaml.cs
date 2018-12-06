@@ -33,6 +33,8 @@ namespace MyApp.Pages
 
     internal class ListViewPageViewModel : INotifyPropertyChanged
     {
+        //ObservableCollection: Represents a dynamic data collection that provides notifications when items get
+        //     added, removed, or when the whole list is refreshed.
         public ObservableCollection<Item> Items { get; }
         public ObservableCollection<Grouping<string, Item>> ItemsGrouped { get; }
 

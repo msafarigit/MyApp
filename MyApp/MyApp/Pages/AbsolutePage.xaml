@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApp.Pages.AbsolutePage">
+
+    <AbsoluteLayout>
+        <!--AbsoluteLayout.LayoutBounds="Y,X,Width,Height"-->
+        <!--With AbsoluteLayoutFlag.All, the Rectangle bounds parameters have the following meaning:
+                X: means the percentage of the remaining space (i.e parent width - control width) which should be on the left of the control
+                Y: means the percentage of the remaining space (i.e parent height - control height) which should be on the top of the control
+                Width: is the width of the control in percentage of the parent width
+                Height: is the height of the control in percentage of the parent height-->
+        
+        <Label Text="I'm centered on small device only!" AbsoluteLayout.LayoutBounds="115,150,100,100" LineBreakMode="WordWrap"/>
+        <Label Text="I'm bottom center on every device" AbsoluteLayout.LayoutBounds=".25,1,.5,.1" AbsoluteLayout.LayoutFlags="All" LineBreakMode="WordWrap"/>
+
+        <BoxView Color="Olive" AbsoluteLayout.LayoutBounds="1,.5,25,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="Red" AbsoluteLayout.LayoutBounds="0,.5,25,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="Blue" AbsoluteLayout.LayoutBounds=".5,0,100,25" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+    </AbsoluteLayout>
+    
+</ContentPage>
