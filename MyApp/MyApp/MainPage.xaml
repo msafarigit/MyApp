@@ -5,9 +5,12 @@
              xmlns:pages="clr-namespace:MyApp.Pages"
              x:Class="MyApp.MainPage">
 
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="RelativePage" Clicked="ToolbarItem_Clicked" ></ToolbarItem>
+    </TabbedPage.ToolbarItems>
 
     <TabbedPage.Children>
-        <pages:RelativePage Title="Page 1"/>
+        <pages:Page1 Title="Page 1"/>
         <pages:AbsolutePage Title="Page 2"/>
         <pages:ScrollPage Title="Page 3"/>
         <pages:TestListViewPage2 Title="Page 4"/>

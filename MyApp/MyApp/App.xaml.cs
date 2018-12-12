@@ -26,7 +26,8 @@ namespace MyApp
             InitializeComponent();
 
             //Gets or sets the root page of the application.
-            MainPage = new MainPage(); //When we don't want to use Navigation
+            //MainPage = new MainPage(); //When we don't want to use Navigation
+            MainPage = new NavigationPage(new MainPage()); //When we want to use Navigation
         }
 
         protected override void OnStart()

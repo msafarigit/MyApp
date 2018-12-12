@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using MyApp.Pages;
+using Xamarin.Forms;
 
 namespace MyApp
 {
@@ -19,6 +20,11 @@ namespace MyApp
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void ToolbarItem_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new RelativePage());
         }
 
         //This is Loaded Event!! Add Control in runtime
