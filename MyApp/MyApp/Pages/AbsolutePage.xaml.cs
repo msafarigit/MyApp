@@ -16,5 +16,10 @@ namespace MyApp.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page1(), true);
+        }
+    }
 }

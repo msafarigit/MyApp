@@ -11,6 +11,8 @@ namespace MyApp.Pages
 	{
 		public Page1 ()
 		{
+            Title = "Page 1";
+
             Button button = new Button { Text = "RelativePage", Margin = new Thickness(20) };
             button.Clicked += async (sender, e) => await Navigation.PushAsync(new RelativePage());
 
