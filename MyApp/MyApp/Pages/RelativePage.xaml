@@ -10,6 +10,7 @@
                  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.8, Constant=0}">
         </BoxView>
         <!--Relative To Page is RelativeToParent-->
+        <!--Views: Visual objects such as buttons, labels, or text entry boxes -->
         <BoxView Color="Blue" x:Name="blueBox" 
                  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=redBox, Property=Y, Factor=1, Constant=20 }"
                  RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=redBox, Property=X, Factor=1, Constant=20 }"
