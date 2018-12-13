@@ -14,22 +14,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Pages\TestListViewPage2.xaml.cs">
+    <Compile Update="Pages\Test\TestListViewPage2.xaml.cs">
       <DependentUpon>TestListViewPage2.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Pages\AbsolutePage.xaml">
+    <EmbeddedResource Update="Pages\Test\AbsolutePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\RelativePage.xaml">
+    <EmbeddedResource Update="Pages\Test\RelativePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\ScrollPage.xaml">
+    <EmbeddedResource Update="Pages\Test\ScrollPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\TestListViewPage1.xaml">
+    <EmbeddedResource Update="Pages\Test\TestListViewPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
