@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyApp.Pages"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="MyApp.Pages.StaticConstantsPage"
+             Title="Static Constants Page"
+             Padding="{x:Static local:AppConstants.PagePadding}">
+    
+    <!--
+    The x:Static Markup Extension
+        Although it is most common to define the Resources collection at the top of the page, keep in mind that the
+        Resources property is defined by VisualElement , and you can have Resources collections on other elements on
+        the page. For example, try adding one to the StackLayout in this example:
+        You’ll discover that the text color of the buttons is now blue. Basically, whenever the XAML parser encounters a
+        StaticResource markup extension, it searches up the visual tree and uses the first ResourceDictionary it
+        encounters containing that key.
+    
+        One of the most common types of objects stored in resource dictionaries is the Xamarin.Forms Style , which defines 
+        a collection of property settings. Sometimes developers new to XAML wonder if they can put a visual element such as Label or 
+        Button in a ResourceDictionary. While it’s surely possible, it doesn’t make much sense. The purpose of the ResourceDictionary 
+        is to share objects. A visual element cannot be shared. The same instance cannot appear
+        twice on a single page.
+    
+        Despite the similarities of their names, x:Static and StaticResource are very different. StaticResource returns
+        an object from a resource dictionary while x:Static accesses one of the following:
+            -a public static field
+            -a public static property
+            -a public constant field
+            -an enumeration member.
+        
+        The StaticResource markup extension is supported by XAML implementations that define a resource dictionary,
+        while x:Static is an intrinsic part of XAML, as the x prefix reveals.
+    -->
+    
+    <StackLayout>
+        <Label Text="Hello, XAML!" TextColor="{x:Static local:AppConstants.BackgroundColor}" 
+               BackgroundColor="{x:Static local:AppConstants.ForegroundColor}" 
+               Font="{x:Static local:AppConstants.TitleFont}" HorizontalOptions="Center" />
+
+        <BoxView WidthRequest="{x:Static sys:Math.PI}" HeightRequest="{x:Static sys:Math.E}" 
+                 Color="{x:Static local:AppConstants.ForegroundColor}" HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" Scale="100" />
+    </StackLayout>
+</ContentPage>

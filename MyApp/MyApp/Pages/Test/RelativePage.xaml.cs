@@ -17,4 +17,5 @@ namespace MyApp.Pages
 			InitializeComponent ();
 		}
 	}
+
 }
