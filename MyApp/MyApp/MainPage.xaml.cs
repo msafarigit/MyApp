@@ -22,9 +22,9 @@ namespace MyApp
             InitializeComponent();
         }
 
-        private async void ToolbarItem_Clicked(object sender, System.EventArgs e)
+        private async void Setting_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new RelativePage());
+            await this.Navigation.PushAsync(new SettingsPage());
         }
 
         //This is Loaded Event!! Add Control in runtime

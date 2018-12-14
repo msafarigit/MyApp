@@ -3,17 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyApp"
              xmlns:pages="clr-namespace:MyApp.Pages"
-             x:Class="MyApp.MainPage">
+             x:Class="MyApp.MainPage"
+             Title="Home">
 
     <TabbedPage.ToolbarItems>
-        <ToolbarItem Text="RelativePage" Clicked="ToolbarItem_Clicked" ></ToolbarItem>
+        <ToolbarItem Text="Setting" Icon="icon_settings.png" Order="Primary" Clicked="Setting_Clicked"></ToolbarItem>
     </TabbedPage.ToolbarItems>
-
+    
     <TabbedPage.Children>
-        <pages:Page1 Title="Page 1"/>
-        <pages:AbsolutePage Title="Page 2"/>
-        <pages:ScrollPage Title="Page 3"/>
-        <pages:TestListViewPage2 Title="Page 4"/>
+        <pages:TrendingPage Title="Trending" Icon="icon_trending.png"/>
+        <pages:WorldPage Title="World" Icon="icon_world.png"/>
+        <pages:TechnologyPage Title="Technology" Icon="icon_technology.png"/>
     </TabbedPage.Children>
     
     
