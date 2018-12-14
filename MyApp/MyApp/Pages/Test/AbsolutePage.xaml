@@ -8,6 +8,7 @@
     </ContentPage.ToolbarItems>
     
     <AbsoluteLayout>
+        <!--The AbsoluteLayout class defines two attached properties named LayoutBounds and LayoutFlags-->
         <!--AbsoluteLayout.LayoutBounds="Y,X,Width,Height"-->
         <!--With AbsoluteLayoutFlag.All, the Rectangle bounds parameters have the following meaning:
                 X: means the percentage of the remaining space (i.e parent width - control width) which should be on the left of the control

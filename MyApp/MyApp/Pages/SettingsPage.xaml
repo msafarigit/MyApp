@@ -8,7 +8,7 @@
         <!--Margin: double uniformSize -->
         <!--Margin: double horizontalSize, double verticalSize -->
         <!--Margin: double left, double top, double right, double bottom -->
-        <StackLayout Margin="20">
+        <!--<StackLayout Margin="20">
             <TableView Intent="Menu">
                 <TableRoot>
                     <TableSection Title="Profile">
@@ -17,11 +17,24 @@
                     </TableSection>
                 </TableRoot>
             </TableView>
-        </StackLayout>
+        </StackLayout>-->
         
-        <!--<StackLayout Margin="20">
+        <StackLayout Margin="20">
 
-            <Label FontSize="Medium" Margin="0, 5, 0, 15" Text="Adjust your app settings as needed." HorizontalOptions="CenterAndExpand" />
+            <!-- Label: is an object element. It is a Xamarin.Forms object expressed as an XML element.
+                        Text , VerticalOptions , FontAttributes and FontSize are property attributes. They are Xamarin.Forms
+                        properties expressed as XML attributes.
+                        In that final snippet, FontSize has become a property element. It is a Xamarin.Forms property but it is now
+                        an XML element. -->
+            <Label Margin="0, 5, 0, 15" Text="Adjust your app settings as needed." HorizontalOptions="CenterAndExpand">
+                <!--property-element syntax-->
+                <Label.FontAttributes>
+                    Bold
+                </Label.FontAttributes>
+                <Label.FontSize>
+                    Medium
+                </Label.FontSize>
+            </Label>
 
             <Label Text="Max articles to display:"/>
             <Slider x:Name="articlesCountSlider" Minimum="0" Maximum="10"/>
@@ -48,6 +61,6 @@
             </Picker>
 
             <Button Text="Save"/>
-        </StackLayout> -->
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
