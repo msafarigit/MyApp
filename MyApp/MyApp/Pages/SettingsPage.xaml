@@ -1,12 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyApp.Pages.SettingsPage">
+             x:Class="MyApp.Pages.SettingsPage"
+             Title="Settings">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <!--Margin: double uniformSize -->
+        <!--Margin: double horizontalSize, double verticalSize -->
+        <!--Margin: double left, double top, double right, double bottom -->
+        <StackLayout Margin="20">
+            <TableView Intent="Menu">
+                <TableRoot>
+                    <TableSection Title="Profile">
+                        <SwitchCell Text="Use display name"/>
+                        <EntryCell Text="Display name"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
         </StackLayout>
+        
+        <!--<StackLayout Margin="20">
+
+            <Label FontSize="Medium" Margin="0, 5, 0, 15" Text="Adjust your app settings as needed." HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Max articles to display:"/>
+            <Slider x:Name="articlesCountSlider" Minimum="0" Maximum="10"/>
+
+            <Label Text="Enter the display name:"/>
+            <Entry x:Name="displayName"/>
+
+            <Image HeightRequest="100" HorizontalOptions="Center" WidthRequest="100" BackgroundColor="Aqua" Aspect="AspectFit" Source="icon_trending.png" />
+
+            <Label Text="My bio:"/>
+            <Editor HeightRequest="140" x:Name="bioEditor" />
+
+            <Label Text="Select default news category:"/>
+            <Picker x:Name="categoryPicker">
+                <Picker.Items>
+                    <x:String>Business</x:String>
+                    <x:String>Science and Technology</x:String>
+                    <x:String>Health</x:String>
+                    <x:String>Politics</x:String>
+                    <x:String>Entertainment</x:String>
+                    <x:String>Sports</x:String>
+                    <x:String>World</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="Save"/>
+        </StackLayout> -->
     </ContentPage.Content>
 </ContentPage>
